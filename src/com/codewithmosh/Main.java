@@ -6,19 +6,11 @@ import com.codewithmosh.UIControl;
 public class Main {
 
     public static void main(String[] args) {
-        var control=new UIControl(true);
-        var textBox=new TextBox();
-        show(control);
-        //show(textBox);
-    }
-
-    public static void show(UIControl control){
-        if(control instanceof TextBox){
-            var textBox=(TextBox)control;
-            textBox.setText("hello");
-        }
-
-        System.out.println(control);
+        var point1=new Point(1,2);
+        var point2=new Point(1,2);
+//        System.out.println(point1.equals(point1));
+        System.out.println(point1.hashCode());
+        System.out.println(point2.hashCode());
     }
 
 }
