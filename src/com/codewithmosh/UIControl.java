@@ -1,6 +1,6 @@
 package com.codewithmosh;
 
-public class UIControl {
+public abstract class UIControl {
     boolean isEnabled=true;
 
 //    public UIControl(boolean isEnabled) {
@@ -8,10 +8,9 @@ public class UIControl {
 //        //System.out.println("UI Control");
 //    }
 
-    public void render(){
+    public abstract void render();
 
-    }
-    public void enable() {
+    public final void enable() {
         isEnabled = true;
     }
 
