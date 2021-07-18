@@ -11,10 +11,9 @@ public class ExceptionsDemo {
     public static void show() throws IOException {
         var account=new Account();
         try {
-            account.deposit(-1);
-        } catch (IOException e) {
-            System.out.println("logging");
-            throw e;
+            account.withDraw(10);
+        } catch (AccountException e) {
+            e.printStackTrace();
         }
     }
 
