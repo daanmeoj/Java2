@@ -8,6 +8,11 @@ public class User implements Comparable<User> {
     }
 
     @Override
+    public String toString() {
+        return "Points= "+points;
+    }
+
+    @Override
     public int compareTo(User other) {
         //this<0 ---->-1
         //this==0 ---->0
