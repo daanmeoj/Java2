@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(Utils.max(1,2));
         System.out.println(Utils.max(new User(10),new User(20)));
+        Utils.print(1,10);
     }
 
 }
