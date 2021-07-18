@@ -13,9 +13,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Utils.max(1,2));
-        System.out.println(Utils.max(new User(10),new User(20)));
-        Utils.print(1,10);
+      var instructors=new GenericList<Instructor>();
+      var users=new GenericList<User>();
+      Utils.printUsers(instructors);
     }
 
 }

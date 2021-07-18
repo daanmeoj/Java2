@@ -6,7 +6,15 @@ public class Utils {
        return first.compareTo(second)<0?second:first;
     }
 
-    public static <K,V> void print(K key, V value){
-        System.out.println(key+"="+value);
+    public static void print(User user){
+        System.out.println(user);
+    }
+
+    //class CAP#1 extends User{}
+    //class Instructor extends User{}
+    public static void printUsers(GenericList<? super User> users){
+        GenericList<Object> temp=new GenericList<>();
+        users.add(new Instructor(1));
+        Object x=users.get(0);
     }
 }
