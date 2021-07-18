@@ -1,4 +1,4 @@
 package com.codewithmosh.generics;
 
-public class User {
+public class User implements Comparable,Cloneable {
 }

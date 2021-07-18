@@ -16,9 +16,8 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) {
-       GenericList<Integer> numbers=new GenericList<>();
-       numbers.add(1);
-       int number=numbers.get(0);
+       GenericList<User> numbers=new GenericList<>();
+
     }
 
 }
